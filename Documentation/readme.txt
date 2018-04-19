@@ -6,3 +6,5 @@ A rather simple plugin to create 3 "MyBB like" newsbars on your board with the o
 To Install:
 
 Upload The Files, And Go to Admin CP And Activate!
+
+

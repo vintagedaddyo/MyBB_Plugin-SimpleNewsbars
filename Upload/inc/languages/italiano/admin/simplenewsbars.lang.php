@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.0
+ * Plugin Version: 1.1
  * 
  */
 
@@ -19,7 +19,7 @@ $l['simplenewsbars_desc'] = 'Aggiunge semplici newsbar all indice e alla pagina 
 $l['simplenewsbars_web'] = 'http://community.mybb.com/user-6029.html';
 $l['simplenewsbars_auth'] = 'Vintagedaddyo';
 $l['simplenewsbars_authsite'] = 'http://community.mybb.com/user-6029.html';
-$l['simplenewsbars_ver'] = '1.0';
+$l['simplenewsbars_ver'] = '1.1';
 $l['simplenewsbars_compat'] = '18*';
 
 // Impostazione del gruppo
@@ -39,32 +39,62 @@ $l['simplenewsbars_description_setting_2'] = 'Se si imposta questa opzione su ye
 
 // Impostazione 3
 
-$l['simplenewsbars_title_setting_3'] = 'Visualizzazione avvisi di Newsbars semplice';
+$l['simplenewsbars_title_setting_3'] = 'Visualizzazione semplice dell indice degli avvisi di Newsbars';
 $l['simplenewsbars_description_setting_3'] = 'Inserisci il testo che vuoi visualizzare in Alert.';
 
 // Impostazione 4
 
-$l['simplenewsbars_title_setting_4'] = 'Vuoi abilitare l avviso di una semplice barra delle notizie?';
-$l['simplenewsbars_description_setting_4'] = 'Se imposti questa opzione su yes, Alert sarà attivo sulla tua bacheca.';
+$l['simplenewsbars_title_setting_4'] = 'Vuoi abilitare l avviso dell indice di Simple Newsbars?';
+$l['simplenewsbars_description_setting_4'] = 'Se si imposta questa opzione su yes, Alert sarà attivo sul proprio indice.';
 
 // Impostazione 5
 
-$l['simplenewsbars_title_setting_5'] = 'Visualizzazione semplice di NewsBar 1 avviso';
+$l['simplenewsbars_title_setting_5'] = 'Simple Newsbars Notice 1 Index Display';
 $l['simplenewsbars_description_setting_5'] = 'Inserisci il testo che vuoi visualizzare nell Avviso 1.';
 
 // Impostazione 6
 
-$l['simplenewsbars_title_setting_6'] = 'Vuoi abilitare la notifica 1 di Simple Newsbar?';
-$l['simplenewsbars_description_setting_6'] = 'Se si imposta questa opzione su yes, l avviso 1 sarà attivo sulla propria scheda.';
+$l['simplenewsbars_title_setting_6'] = 'Vuoi attivare Simple Newsbars Index Notice 1?';
+$l['simplenewsbars_description_setting_6'] = 'Se si imposta questa opzione su yes, l avviso 1 sarà attivo nel proprio indice.';
 
 // Impostazione 7
 
-$l['simplenewsbars_title_setting_7'] = 'Simple Newsbars Notice 2 Display';
+$l['simplenewsbars_title_setting_7'] = 'Simple Newsbars Notice 2 Index Display';
 $l['simplenewsbars_description_setting_7'] = 'Inserisci il testo che vuoi visualizzare nell avviso 2.';
 
 // Impostazione 8
 
-$l['simplenewsbars_title_setting_8'] = 'Vuoi abilitare l avviso 2 di Simple Newsbar?';
-$l['simplenewsbars_description_setting_8'] = 'Se si imposta questa opzione su yes, l avviso 2 sarà attivo sulla propria scheda.';
+$l['simplenewsbars_title_setting_8'] = 'Vuoi attivare Simple Newsbars Index Notice 2?';
+$l['simplenewsbars_description_setting_8'] = 'Se si imposta questa opzione su yes, l avviso 2 sarà attivo sul proprio indice.';
+
+// Impostazione 9
+
+$l['simplenewsbars_title_setting_9'] = 'Visualizzazione semplice del portale degli avvisi di Newsbars';
+$l['simplenewsbars_description_setting_9'] = 'Inserisci il testo che vuoi visualizzare in Alert.';
+
+// Impostazione 10
+
+$l['simplenewsbars_title_setting_10'] = 'Vuoi abilitare l avviso del portale delle newsbars semplici?';
+$l['simplenewsbars_description_setting_10'] = 'Se si imposta questa opzione su yes, Alert sarà attivo sul portale.';
+
+// Impostazione 11
+
+$l['simplenewsbars_title_setting_11'] = 'Simple Newsbars Notice 1 Portal Display';
+$l['simplenewsbars_description_setting_11'] = 'Inserisci il testo che vuoi visualizzare nell Avviso 1.';
+
+// Impostazione 12
+
+$l['simplenewsbars_title_setting_12'] = 'Vuoi abilitare l avviso 1 del portale di newsbars semplice?';
+$l['simplenewsbars_description_setting_12'] = 'Se si imposta questa opzione su yes, l avviso 1 sarà attivo sul portale.';
+
+// Impostazione 13
+
+$l['simplenewsbars_title_setting_13'] = 'Simple Newsbars Notice 2 Portal Display';
+$l['simplenewsbars_description_setting_13'] = 'Inserisci il testo che vuoi visualizzare nell avviso 2.';
+
+// Impostazione 14
+
+$l['simplenewsbars_title_setting_14'] = 'Vuoi abilitare Simple Newsbars Portal Notice 2?';
+$l['simplenewsbars_description_setting_14'] = 'Se si imposta questa opzione su yes, l avviso 2 sarà attivo sul portale.';
 
 ?>
