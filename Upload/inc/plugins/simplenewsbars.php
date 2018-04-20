@@ -248,8 +248,8 @@ function simplenewsbars_activate()
     $simplenewsbars_setting_14 = array(
         'sid' => '0',
         'name' => 'simplenewsbars_enable_input_6',
-        'title' => $lang->simplenewsbars_title_setting_8,
-        'description' => $lang->simplenewsbars_description_setting_8,
+        'title' => $lang->simplenewsbars_title_setting_14,
+        'description' => $lang->simplenewsbars_description_setting_14,
         'optionscode' => 'yesno',
         'value' => '1',
         'disporder' => '14',
