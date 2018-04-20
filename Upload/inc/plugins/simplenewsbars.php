@@ -58,8 +58,8 @@ function simplenewsbars_activate()
         'name' => 'simplenewsbars',
         'title' => $lang->simplenewsbars_title_setting_group,
         'description' => $lang->simplenewsbars_description_setting_group,
-        'disporder' => "1",
-        'isdefault' => "0"
+        'disporder' => '1',
+        'isdefault' => '0'
     );
 
     // Settinggroup Insert Query
