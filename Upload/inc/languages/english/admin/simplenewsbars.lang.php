@@ -1,16 +1,16 @@
- <?php
+<?php
 /*
- * MyBB: Simple Newsbars
- *
- * File: simplenewsbars.lang.php
- * 
- * Authors: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Plugin Version: 1.1
- * 
- */
+* MyBB: Simple Newsbars
+*
+* File: simplenewsbars.lang.php
+*
+* Authors: Vintagedaddyo
+*
+* MyBB Version: 1.8
+*
+* Plugin Version: 1.1
+*
+*/
 
 // plugin_info
 
@@ -96,5 +96,4 @@ $l['simplenewsbars_description_setting_13'] = 'Enter the text you want to displa
 
 $l['simplenewsbars_title_setting_14'] = 'Do you want to enable Simple Newsbars Portal Notice 2?';
 $l['simplenewsbars_description_setting_14'] = 'If you set this option to yes, Notice 2 will be active on your portal.';
-
 ?>
