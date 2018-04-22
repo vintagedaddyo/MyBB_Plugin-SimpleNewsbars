@@ -8,7 +8,7 @@
 *
 * MyBB Version: 1.8
 *
-* Plugin Version: 1.1
+* Plugin Version: 1.2
 *
 */
 
@@ -115,7 +115,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_4,
         'optionscode' => 'yesno',
         'value' => '1',
-        'disporder' => '4',
+        'disporder' => '5',
         'gid' => intval($gid)
     );
 
@@ -128,7 +128,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_5,
         'optionscode' => 'textarea',
         'value' => '<strong>Latest news from the MyBB Blog:</strong> <a href="http://blog.mybb.com/2018/01/07/mybb-support-policy-changes/">MyBB Support Policy Changes</a> <span class="date">(January 7, 2018)</span>',
-        'disporder' => '5',
+        'disporder' => '6',
         'gid' => intval($gid)
     );
 
@@ -141,7 +141,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_6,
         'optionscode' => 'yesno',
         'value' => '1',
-        'disporder' => '6',
+        'disporder' => '8',
         'gid' => intval($gid)
     );
 
@@ -154,7 +154,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_7,
         'optionscode' => 'textarea',
         'value' => '<strong>Are you on the </strong><a href="http://community.mybb.com/member.php?action=register">MyBB Community Forums</a><strong>&nbsp;?</strong> - Sign up for notification of new MyBB releases and updates.',
-        'disporder' => '7',
+        'disporder' => '9',
         'gid' => intval($gid)
     );
 
@@ -167,7 +167,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_8,
         'optionscode' => 'yesno',
         'value' => '1',
-        'disporder' => '8',
+        'disporder' => '11',
         'gid' => intval($gid)
     );
 
@@ -180,7 +180,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_9,
         'optionscode' => 'textarea',
         'value' => '<strong>Latest MyBB Release:</strong> <a href="http://blog.mybb.com/2018/03/15/mybb-1-8-15-released-security-maintenance-release/">MyBB 1.8.15 Released — Security & Maintenance Release</a> <span class="date">(March 15, 2018)</span>',
-        'disporder' => '9',
+        'disporder' => '12',
         'gid' => intval($gid)
     );
 
@@ -193,7 +193,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_10,
         'optionscode' => 'yesno',
         'value' => '1',
-        'disporder' => '10',
+        'disporder' => '14',
         'gid' => intval($gid)
     );
 
@@ -206,7 +206,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_11,
         'optionscode' => 'textarea',
         'value' => '<strong>Latest news from the MyBB Blog:</strong> <a href="http://blog.mybb.com/2018/01/07/mybb-support-policy-changes/">MyBB Support Policy Changes</a> <span class="date">(January 7, 2018)</span>',
-        'disporder' => '11',
+        'disporder' => '15',
         'gid' => intval($gid)
     );
 
@@ -219,7 +219,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_12,
         'optionscode' => 'yesno',
         'value' => '1',
-        'disporder' => '12',
+        'disporder' => '17',
         'gid' => intval($gid)
     );
 
@@ -232,7 +232,7 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_13,
         'optionscode' => 'textarea',
         'value' => '<strong>Are you on the </strong><a href="http://community.mybb.com/member.php?action=register">MyBB Community Forums</a><strong>&nbsp;?</strong> - Sign up for notification of new MyBB releases and updates.',
-        'disporder' => '13',
+        'disporder' => '18',
         'gid' => intval($gid)
     );
 
@@ -245,43 +245,19 @@ function simplenewsbars_activate()
         'description' => $lang->simplenewsbars_description_setting_14,
         'optionscode' => 'yesno',
         'value' => '1',
-        'disporder' => '14',
+        'disporder' => '20',
         'gid' => intval($gid)
     );
 
-    // Enable Index / Portal Insert Queries
+    // Setting 15
 
-    $db->insert_query('settings', $simplenewsbars_setting_1);
-    $db->insert_query('settings', $simplenewsbars_setting_2);
-
-    // Index Insert Queries
-
-    $db->insert_query('settings', $simplenewsbars_setting_3);
-    $db->insert_query('settings', $simplenewsbars_setting_4);
-    $db->insert_query('settings', $simplenewsbars_setting_5);
-    $db->insert_query('settings', $simplenewsbars_setting_6);
-    $db->insert_query('settings', $simplenewsbars_setting_7);
-    $db->insert_query('settings', $simplenewsbars_setting_8);
-
-    // Portal Insert Queries
-
-    $db->insert_query('settings', $simplenewsbars_setting_9);
-    $db->insert_query('settings', $simplenewsbars_setting_10);
-    $db->insert_query('settings', $simplenewsbars_setting_11);
-    $db->insert_query('settings', $simplenewsbars_setting_12);
-    $db->insert_query('settings', $simplenewsbars_setting_13);
-    $db->insert_query('settings', $simplenewsbars_setting_14);
-
-    // Rebuild Settings
-
-    rebuild_settings();
-
-    // Insert Array
-
-    $insertarray = array(
-        "title" => "simplenewsbars_1",
-        "template" => "<style>
-.alert {
+    $simplenewsbars_setting_15 = array(
+        'sid' => '0',
+        'name' => 'simplenewsbars_css_input_1',
+        'title' => $lang->simplenewsbars_title_setting_15,
+        'description' => $lang->simplenewsbars_description_setting_15,
+        'optionscode' => 'textarea',
+        'value' => '.alert {
     background: #FFF6BF;
     border-top: 1px solid #FFD324;
     border-left: 1px solid #FFD324;
@@ -306,22 +282,20 @@ function simplenewsbars_activate()
 }
 .alert a:hover {
  color: #ff7500;
-}
-</style><div id=\"alert\"><p class=\"alert\">{\$mybb->settings[\'simplenewsbars_input_1\']}</p></div>",
-        "sid" => - 1,
-        "dateline" => TIME_NOW
+}',
+        'disporder' => '4',
+        'gid' => intval($gid)
     );
 
-    // Insert Array Query
+    // Setting 16
 
-    $db->insert_query("templates", $insertarray);
-
-    // Insert Array
-
-    $insertarray = array(
-        "title" => "simplenewsbars_2",
-        "template" => "<style>
-.notice1 {
+    $simplenewsbars_setting_16 = array(
+        'sid' => '0',
+        'name' => 'simplenewsbars_css_input_2',
+        'title' => $lang->simplenewsbars_title_setting_16,
+        'description' => $lang->simplenewsbars_description_setting_16,
+        'optionscode' => 'textarea',
+        'value' => '.notice1 {
     background: #D6ECA6;
     border-top: 1px solid #8DC93E;
     border-left: 1px solid #8DC93E;
@@ -346,22 +320,20 @@ function simplenewsbars_activate()
 }
 .notice1 a:hover {
  color: #ff7500;
-}
-</style><div id=\"notice1\"><p class=\"notice1\">{\$mybb->settings[\'simplenewsbars_input_2\']}</p></div>",
-        "sid" => - 1,
-        "dateline" => TIME_NOW
+}',
+        'disporder' => '7',
+        'gid' => intval($gid)
     );
 
-    // Insert Array Query
+    // Setting 17
 
-    $db->insert_query("templates", $insertarray);
-
-    // Insert Array
-
-    $insertarray = array(
-        "title" => "simplenewsbars_3",
-        "template" => "<style>
-.notice2 {
+    $simplenewsbars_setting_17 = array(
+        'sid' => '0',
+        'name' => 'simplenewsbars_css_input_3',
+        'title' => $lang->simplenewsbars_title_setting_17,
+        'description' => $lang->simplenewsbars_description_setting_17,
+        'optionscode' => 'textarea',
+        'value' => '.notice2 {
     background: #ADCBE7;
     border-top: 1px solid #0F5C8E;
     border-left: 1px solid #0F5C8E;
@@ -386,22 +358,20 @@ function simplenewsbars_activate()
 }
 .notice2 a:hover {
  color: #ff7500;
-}
-</style><div id=\"notice2\"><p class=\"notice2\">{\$mybb->settings[\'simplenewsbars_input_3\']}</p></div>",
-        "sid" => - 1,
-        "dateline" => TIME_NOW
+}',
+        'disporder' => '10',
+        'gid' => intval($gid)
     );
 
-    // Insert Array Query
+    // Setting 18
 
-    $db->insert_query("templates", $insertarray);
-
-    // Insert Array
-
-    $insertarray = array(
-        "title" => "simplenewsbars_4",
-        "template" => "<style>
-.alert {
+    $simplenewsbars_setting_18 = array(
+        'sid' => '0',
+        'name' => 'simplenewsbars_css_input_4',
+        'title' => $lang->simplenewsbars_title_setting_18,
+        'description' => $lang->simplenewsbars_description_setting_18,
+        'optionscode' => 'textarea',
+        'value' => '.alert {
     background: #FFF6BF;
     border-top: 1px solid #FFD324;
     border-left: 1px solid #FFD324;
@@ -426,22 +396,20 @@ function simplenewsbars_activate()
 }
 .alert a:hover {
  color: #ff7500;
-}
-</style><div id=\"alert\"><p class=\"alert\">{\$mybb->settings[\'simplenewsbars_input_4\']}</p></div>",
-        "sid" => - 1,
-        "dateline" => TIME_NOW
+}',
+        'disporder' => '13',
+        'gid' => intval($gid)
     );
 
-    // Insert Array Query
+    // Setting 17
 
-    $db->insert_query("templates", $insertarray);
-
-    // Insert Array
-
-    $insertarray = array(
-        "title" => "simplenewsbars_5",
-        "template" => "<style>
-.notice1 {
+    $simplenewsbars_setting_19 = array(
+        'sid' => '0',
+        'name' => 'simplenewsbars_css_input_5',
+        'title' => $lang->simplenewsbars_title_setting_19,
+        'description' => $lang->simplenewsbars_description_setting_19,
+        'optionscode' => 'textarea',
+        'value' => '.notice1 {
     background: #D6ECA6;
     border-top: 1px solid #8DC93E;
     border-left: 1px solid #8DC93E;
@@ -466,22 +434,20 @@ function simplenewsbars_activate()
 }
 .notice1 a:hover {
  color: #ff7500;
-}
-</style><div id=\"notice1\"><p class=\"notice1\">{\$mybb->settings[\'simplenewsbars_input_5\']}</p></div>",
-        "sid" => - 1,
-        "dateline" => TIME_NOW
+}',
+        'disporder' => '16',
+        'gid' => intval($gid)
     );
 
-    // Insert Array Query
+    // Setting 20
 
-    $db->insert_query("templates", $insertarray);
-
-    // Insert Array
-
-    $insertarray = array(
-        "title" => "simplenewsbars_6",
-        "template" => "<style>
-.notice2 {
+    $simplenewsbars_setting_20 = array(
+        'sid' => '0',
+        'name' => 'simplenewsbars_css_input_6',
+        'title' => $lang->simplenewsbars_title_setting_20,
+        'description' => $lang->simplenewsbars_description_setting_20,
+        'optionscode' => 'textarea',
+        'value' => '.notice2 {
     background: #ADCBE7;
     border-top: 1px solid #0F5C8E;
     border-left: 1px solid #0F5C8E;
@@ -504,10 +470,57 @@ function simplenewsbars_activate()
 .notice2 a:visited {
  color: #007fd0;
 }
-.ntice2 a:hover {
+.notice2 a:hover {
  color: #ff7500;
-}
-</style><div id=\"notice2\"><p class=\"notice2\">{\$mybb->settings[\'simplenewsbars_input_6\']}</p></div>",
+}',
+        'disporder' => '19',
+        'gid' => intval($gid)
+    );
+
+    // Enable Index / Portal Insert Queries
+
+    $db->insert_query('settings', $simplenewsbars_setting_1);
+    $db->insert_query('settings', $simplenewsbars_setting_2);
+
+    // Index Insert Queries
+
+    $db->insert_query('settings', $simplenewsbars_setting_3);
+    $db->insert_query('settings', $simplenewsbars_setting_4);
+    $db->insert_query('settings', $simplenewsbars_setting_5);
+    $db->insert_query('settings', $simplenewsbars_setting_6);
+    $db->insert_query('settings', $simplenewsbars_setting_7);
+    $db->insert_query('settings', $simplenewsbars_setting_8);
+
+    $db->insert_query('settings', $simplenewsbars_setting_15);
+    $db->insert_query('settings', $simplenewsbars_setting_16);
+    $db->insert_query('settings', $simplenewsbars_setting_17);
+
+    // Portal Insert Queries
+
+    $db->insert_query('settings', $simplenewsbars_setting_9);
+    $db->insert_query('settings', $simplenewsbars_setting_10);
+    $db->insert_query('settings', $simplenewsbars_setting_11);
+    $db->insert_query('settings', $simplenewsbars_setting_12);
+    $db->insert_query('settings', $simplenewsbars_setting_13);
+    $db->insert_query('settings', $simplenewsbars_setting_14);
+
+    $db->insert_query('settings', $simplenewsbars_setting_18);
+    $db->insert_query('settings', $simplenewsbars_setting_19);
+    $db->insert_query('settings', $simplenewsbars_setting_20);
+    
+    // Rebuild Settings
+
+    rebuild_settings();
+
+    // Insert Array
+
+    $insertarray = array(
+        "title" => "simplenewsbars_1",
+        "template" => "
+        <style>
+        {\$mybb->settings[\'simplenewsbars_css_input_1\']}
+        </style>
+        <div id=\"alert\"><p class=\"alert\">{\$mybb->settings[\'simplenewsbars_input_1\']}</p></div>",
         "sid" => - 1,
         "dateline" => TIME_NOW
     );
@@ -515,6 +528,92 @@ function simplenewsbars_activate()
     // Insert Array Query
 
     $db->insert_query("templates", $insertarray);
+
+    // Insert Array
+
+    $insertarray = array(
+        "title" => "simplenewsbars_2",
+        "template" => "
+        <style>
+        {\$mybb->settings[\'simplenewsbars_css_input_2\']}
+        </style>
+        <div id=\"notice1\"><p class=\"notice1\">{\$mybb->settings[\'simplenewsbars_input_2\']}</p></div>",
+        "sid" => - 1,
+        "dateline" => TIME_NOW
+    );
+
+    // Insert Array Query
+
+    $db->insert_query("templates", $insertarray);
+
+    // Insert Array
+
+    $insertarray = array(
+        "title" => "simplenewsbars_3",
+        "template" => "
+        <style>
+        {\$mybb->settings[\'simplenewsbars_css_input_3\']}
+        </style>
+        <div id=\"notice2\"><p class=\"notice2\">{\$mybb->settings[\'simplenewsbars_input_3\']}</p></div>",
+        "sid" => - 1,
+        "dateline" => TIME_NOW
+    );
+
+    // Insert Array Query
+
+    $db->insert_query("templates", $insertarray);
+
+    // Insert Array
+
+    $insertarray = array(
+        "title" => "simplenewsbars_4",
+        "template" => "
+        <style>
+        {\$mybb->settings[\'simplenewsbars_css_input_4\']}
+        </style>
+        <div id=\"alert\"><p class=\"alert\">{\$mybb->settings[\'simplenewsbars_input_4\']}</p></div>",
+        "sid" => - 1,
+        "dateline" => TIME_NOW
+    );
+
+    // Insert Array Query
+
+    $db->insert_query("templates", $insertarray);
+
+    // Insert Array
+
+    $insertarray = array(
+        "title" => "simplenewsbars_5",
+        "template" => "
+        <style>
+        {\$mybb->settings[\'simplenewsbars_css_input_5\']}
+        </style>
+        <div id=\"notice1\"><p class=\"notice1\">{\$mybb->settings[\'simplenewsbars_input_5\']}</p></div>",
+        "sid" => - 1,
+        "dateline" => TIME_NOW
+    );
+
+    // Insert Array Query
+
+    $db->insert_query("templates", $insertarray);
+
+    // Insert Array
+
+    $insertarray = array(
+        "title" => "simplenewsbars_6",
+        "template" => "
+        <style>
+        {\$mybb->settings[\'simplenewsbars_css_input_6\']}
+        </style>
+        <div id=\"notice2\"><p class=\"notice2\">{\$mybb->settings[\'simplenewsbars_input_6\']}</p></div>",
+        "sid" => - 1,
+        "dateline" => TIME_NOW
+    );
+
+    // Insert Array Query
+
+    $db->insert_query("templates", $insertarray);
+
     include MYBB_ROOT . "/inc/adminfunctions_templates.php";
 
     // Activate on Index template replace
@@ -548,18 +647,29 @@ function simplenewsbars_deactivate()
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_enable_input_1')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_enable_input_2')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_enable_input_3')");
+
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_input_1')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_input_2')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_input_3')");
+
+    $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_css_input_1')");
+    $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_css_input_2')");
+    $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_css_input_3')");
 
     // Portal Query delete
 
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_enable_input_4')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_enable_input_5')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_enable_input_6')");
+
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_input_4')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_input_5')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_input_6')");
+
+    $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_css_input_4')");
+    $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_css_input_5')");
+    $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('simplenewsbars_css_input_6')");
+
     $db->query("DELETE FROM " . TABLE_PREFIX . "settinggroups WHERE name='simplenewsbars'");
 
     // Index Query delete

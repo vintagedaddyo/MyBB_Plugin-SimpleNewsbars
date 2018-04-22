@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.1
+ * Plugin Version: 1.2
  * 
  */
 
@@ -19,7 +19,7 @@ $l['simplenewsbars_desc'] = 'Aggiunge semplici newsbar all indice e alla pagina 
 $l['simplenewsbars_web'] = 'http://community.mybb.com/user-6029.html';
 $l['simplenewsbars_auth'] = 'Vintagedaddyo';
 $l['simplenewsbars_authsite'] = 'http://community.mybb.com/user-6029.html';
-$l['simplenewsbars_ver'] = '1.1';
+$l['simplenewsbars_ver'] = '1.2';
 $l['simplenewsbars_compat'] = '18*';
 
 // Impostazione del gruppo
@@ -96,5 +96,35 @@ $l['simplenewsbars_description_setting_13'] = 'Inserisci il testo che vuoi visua
 
 $l['simplenewsbars_title_setting_14'] = 'Vuoi abilitare Simple Newsbars Portal Notice 2?';
 $l['simplenewsbars_description_setting_14'] = 'Se si imposta questa opzione su yes, l avviso 2 sarà attivo sul portale.';
+
+// Impostazione 15
+
+$l['simplenewsbars_title_setting_15'] = 'CSS per Newsbars Index Alert';
+$l['simplenewsbars_description_setting_15'] = 'Controlla lo stile per l avviso.';
+
+// Impostazione 16
+
+$l['simplenewsbars_title_setting_16'] = 'CSS per Newsbars Index Notice 1';
+$l['simplenewsbars_description_setting_16'] = 'Controlla lo stile per notice1.';
+
+// Impostazione 17
+
+$l['simplenewsbars_title_setting_17'] = 'CSS per Newsbars Index Notice 2';
+$l['simplenewsbars_description_setting_17'] = 'Controlla lo stile per notice2.';
+
+// Impostazione 18
+
+$l['simplenewsbars_title_setting_18'] = 'CSS per Newsbars Portal Alert';
+$l['simplenewsbars_description_setting_18'] = 'Controlla lo stile per l avviso.';
+
+// Impostazione 19
+
+$l['simplenewsbars_title_setting_19'] = 'CSS per Newsbar Portal Notice 1';
+$l['simplenewsbars_description_setting_19'] = 'Controlla lo stile per la notice1.';
+
+// Impostazione 20
+
+$l['simplenewsbars_title_setting_20'] = 'CSS per Newsbars Portal Notice 2';
+$l['simplenewsbars_description_setting_20'] = 'Controlla lo stile per notice2.';
 
 ?>
